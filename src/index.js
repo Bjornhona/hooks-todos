@@ -15,8 +15,10 @@ const AppComponent = () => {
 
   return (
     <TodosContext.Provider value={{ state, dispatch }}>
-      <TodoForm />
-      <TodoList />
+      <div className="container bg-teal-200 mx-auto max-w-md text-center font-mono m-6 p-6 rounded shadow-md">
+        <TodoForm />
+        <TodoList />
+      </div>
     </TodosContext.Provider>
   )
 }
